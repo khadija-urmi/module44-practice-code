@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const Link = ({ route }) => {
     return (
@@ -7,5 +7,7 @@ const Link = ({ route }) => {
         </li>
     );
 };
-
+Link.prototype = {
+    route: PropTypes.object
+}
 export default Link;
